@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="brand.css" />
+    <link rel="stylesheet" href="contact.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -18,7 +19,7 @@
       <a class="brand" href="#inicio" aria-label="CDV, início"><img class="brand-logo" src="public/cdv-logo.png" alt="CDV Assessoria e Produções" /></a>
       <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
       <nav class="nav" aria-label="Navegação principal">
-        <a href="#sobre">A CDV</a><a href="#servicos">O que fazemos</a><a href="#trabalhos">Experiências</a><a class="nav-cta" href="#contato">Vamos conversar</a>
+        <a href="#sobre">A CDV</a><a href="#servicos">O que fazemos</a><a href="#trabalhos">Experiências</a><a class="nav-cta" href="#contato">Solicitar proposta</a>
       </nav>
     </header>
 
@@ -71,8 +72,38 @@
       </section>
 
       <section class="contact section-pad" id="contato">
-        <div class="section-kicker"><span class="kicker-rule"></span><span>SEU PRÓXIMO EVENTO COMEÇA AQUI</span></div>
-        <div class="contact-layout"><div><h2>Vamos conversar<span class="green">?</span></h2><p>Tem uma ideia, uma data ou ainda está pensando no formato? Pode chamar. A gente ouve o que você precisa e ajuda a encontrar o melhor caminho.</p><a class="button button-light" href="https://www.instagram.com/cdvassessoriaeproducoes/" target="_blank" rel="noreferrer">Chamar a CDV no Instagram</a></div><div class="contact-aside"><span class="aside-label">PODE CHEGAR COM UMA IDEIA...</span><div class="contact-step"><span>✳</span><span>Mesmo que ainda esteja no começo</span></div><div class="contact-step"><span>✳</span><span>A gente pensa junto com você</span></div><div class="contact-step"><span>✳</span><span>E cuida para tudo acontecer bem</span></div><a class="instagram-link" href="https://www.instagram.com/cdvassessoriaeproducoes/" target="_blank" rel="noreferrer">@cdvassessoriaeproducoes</a></div></div>
+        <div class="contact-frame">
+          <div class="contact-intro">
+            <span class="contact-badge"><i></i> AGENDA ABERTA</span>
+            <h2>Seu evento começa com uma boa <em>conversa.</em></h2>
+            <p>Conte o que você está imaginando. Com alguns detalhes, a CDV entende o seu momento e conversa com você sobre os próximos passos.</p>
+            <a class="contact-phone" href="https://wa.me/5561983491568" target="_blank" rel="noreferrer"><span class="phone-icon">◉</span><span><small>WHATSAPP DA CDV</small><b>+55 61 98349-1568</b></span></a>
+            <div class="contact-promise"><span>✳</span><span>Seu projeto pode estar no começo. A gente ajuda a dar forma à ideia.</span></div>
+          </div>
+          <form class="inquiry-form" id="inquiry-form">
+            <div class="form-heading"><span>VAMOS PLANEJAR JUNTOS</span><h3>Conte um pouco sobre o evento</h3><p>Preencha o que já souber. Se algo ainda estiver em aberto, pode deixar em branco.</p></div>
+            <div class="form-grid">
+              <label class="field field-wide"><span>Seu nome <b>*</b></span><input name="name" autocomplete="name" placeholder="Como podemos chamar você?" required /></label>
+              <label class="field"><span>Empresa ou instituição</span><input name="company" autocomplete="organization" placeholder="Se houver" /></label>
+              <label class="field"><span>Seu WhatsApp</span><input name="clientPhone" type="tel" autocomplete="tel" placeholder="(61) 9 0000-0000" /></label>
+              <label class="field"><span>Tipo de evento <b>*</b></span><select name="eventType" required><option value="" disabled selected>Selecione uma opção</option><option>Evento corporativo</option><option>Evento promocional</option><option>Ativação de marca</option><option>Evento governamental ou institucional</option><option>Confraternização ou celebração</option><option>Outro</option><option>Ainda estou definindo</option></select></label>
+              <label class="field"><span>Público estimado</span><input name="audience" placeholder="Ex.: 200 pessoas" /></label>
+              <label class="field"><span>Data ou período</span><input name="date" placeholder="Ex.: setembro de 2026" /></label>
+              <label class="field"><span>Cidade e estado <b>*</b></span><input name="location" autocomplete="address-level2" placeholder="Ex.: Brasília, DF" required /></label>
+            </div>
+            <fieldset class="service-options"><legend>Em que podemos ajudar?</legend><p>Marque todas as opções que fizerem sentido.</p><div class="option-grid">
+              <label><input type="checkbox" name="needs" value="Planejamento e assessoria" /><span>Planejamento e assessoria</span></label>
+              <label><input type="checkbox" name="needs" value="Produção e coordenação" /><span>Produção e coordenação</span></label>
+              <label><input type="checkbox" name="needs" value="Equipe e recepção" /><span>Equipe e recepção</span></label>
+              <label><input type="checkbox" name="needs" value="Estrutura e montagem" /><span>Estrutura e montagem</span></label>
+              <label><input type="checkbox" name="needs" value="Ação promocional ou ativação" /><span>Ação promocional ou ativação</span></label>
+              <label><input type="checkbox" name="needs" value="Ainda preciso de orientação" /><span>Ainda preciso de orientação</span></label>
+            </div></fieldset>
+            <label class="field details-field"><span>O que você precisa ou gostaria de realizar?</span><textarea name="details" rows="4" placeholder="Conte sobre o objetivo, local, estrutura ou qualquer detalhe importante para você..."></textarea></label>
+            <button class="form-submit" type="submit">Continuar pelo WhatsApp <span>✳</span></button>
+            <small class="form-note">A mensagem será preparada para o WhatsApp da CDV. Você confere e envia por lá.</small>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer"><a class="brand brand-footer" href="#inicio"><img class="brand-logo" src="public/cdv-logo.png" alt="CDV Assessoria e Produções" /></a><span>Experiências com qualidade. ✳</span><a href="#inicio">VOLTAR AO TOPO</a><small>© <span id="year"></span> CDV Assessoria & Produções</small></footer>
