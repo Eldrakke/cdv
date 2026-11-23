@@ -1,0 +1,15 @@
+:root{--paper:#fff;--ink:#151a17;--muted:#454c47;--green:#147a43;--line:#dce2dc;--cdv-forest:#0d4a2b;--cdv-deep:#092f1d;--cdv-bright:#36a852;--cdv-soft:#e8f2ea;--cdv-mist:#f4f8f4;--cdv-gray:#747c76}
+body{background:var(--paper);color:var(--ink)}
+.topbar{background:#151a17;color:#fff;border-color:#ffffff20}
+.brand-logo{display:block;width:56px;height:56px;object-fit:cover;border-radius:50%;background:#050705}
+.nav>a:not(.nav-cta){color:#f4f8f4}.nav>a:hover{color:#70c386}.nav-cta{background:#fff;color:#151a17}.nav-cta span{color:var(--green)}
+.menu-toggle span{background:#fff}.live-dot{background:var(--cdv-bright)}.eyebrow{color:var(--muted)}.button-dark{background:var(--cdv-forest)}.button-dark span{color:#fff}.note-line{background:var(--green)}
+.values-stamp{background:var(--cdv-forest);color:#fff}.values-row b,.service-flower{color:var(--green)}.section-kicker>span:first-child{color:var(--green)}.kicker-rule{background:var(--line)}
+.intro{background:#fff}.intro-copy p,.section-heading>p,.service p,.hero-text{color:var(--muted)}.intro-copy .text-link{color:var(--cdv-forest)}
+.services{background:var(--cdv-mist)}.service{border-color:var(--line);grid-template-columns:26px 1fr}.service:last-child{border-color:var(--line)}.service-icon{color:var(--cdv-forest)}.service:hover{padding-left:6px}.service-flower{font-size:15px;padding-top:5px}
+.services-foot .live-dot{background:var(--cdv-bright)}.services-foot>a{color:var(--cdv-forest)}.work{background:#fff}.work-card figcaption span{color:#d9f2df}.work-note{background:var(--cdv-soft)}.note-spark{color:var(--green)}.work-note p strong{color:var(--cdv-forest)}
+.contact{background:var(--cdv-deep)}.contact .section-kicker{color:#e6efe8}.contact h2 .green{color:#70c386}.button-light{background:var(--cdv-bright);color:#fff}.button-light:hover{background:var(--green)}.instagram-link{color:#a6dfb3}.contact-step span:first-child{color:#70c386}
+.floating-card{background:#fff;color:var(--ink)}.floating-card .live-dot{background:var(--cdv-bright)}.floating-card strong{color:var(--cdv-forest)}
+.footer{background:#151a17;color:#fff}.footer .brand-logo{width:48px;height:48px}.footer>span{color:#dce2dc}.footer>a:nth-of-type(2){color:#f4f8f4}.footer small{color:#b7c0b9}
+.section-kicker{letter-spacing:1.3px}
+@media(max-width:760px){.topbar{background:#151a17}.nav{background:#151a17;color:#fff;border-color:#ffffff20}.nav>a:not(.nav-cta){color:#f4f8f4;border-color:#ffffff20}.nav-cta{background:#fff}.brand-logo{width:50px;height:50px}.service{grid-template-columns:19px 1fr}.footer .brand-logo{width:42px;height:42px}}
